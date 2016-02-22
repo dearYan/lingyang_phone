@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="red">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+</head>
+<body id="index">
+    <div class="header_container">
+        <header class="header">
+            <div class="more">
+                <div class="collspase">
+                    <span class="icon_bar"></span>
+                    <span class="icon_bar"></span>
+                    <span class="icon_bar"></span>
+                </div>
+                <div class="collspased">
+                    <div class="close_bottom"></div>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="image/logo.png"/>
+            </div>
+        </header>
+        <div class="collspased_container">
+            <ul class="collspased_items">
+                <li class="current_items"><a href="index.html">首页</a></li>
+                <li><a href="service.html">服务</a></li>
+                <li><a href="product.html">产品</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+        </div>
+        <div class="banner swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="banner_img" data-preloading=true data-loading=true data-imgUrl="image/banner1.png">
+                         <img/>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner_img" data-preloading=true data-loading=true data-imgUrl="image/banner2.png">
+                         <img/>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner_img" data-preloading=true data-loading=true data-imgUrl="image/banner3.png">
+                         <img/>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="sub-wrapper">
+            <div class="return_bottom" data-isShow = "false">
+                <img src="image/btn_top.png"/>
+            </div>
+            <div class="index_container">
+                <div class="section1">
+                    <div class="sectionBg"></div>
+                    <div class="cc">
+                        <p>互联网正在将万物连接在一起。</p>
+                        <p>人与人、人与物之间的信息交流变得更加直接、实时和智能。<span>视频</span>承载信息量最多、最自然。<span>视频直播</span>应用越来越广泛。</p>
+                    </div>
+                </div>
+                <div class="servicesIndicators swiper-container">
+                    <h1>衡量视频直播服务的指标</h1>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="silde_page">
+                                <ul class="silde_page_items clearfix clearfix">
+                                    <li>
+                                        <div class="rate"></div>
+                                        <p>连通率</p>
+                                    </li>
+                                    <li>
+                                        <div class="loading_time"></div>
+                                        <p>加载时间</p>
+                                    </li>
+                                    <li>
+                                        <div class="delay"></div>
+                                        <p>延时</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="silde_page">
+                                <ul class="silde_page_items clearfix">
+                                    <li>
+                                        <div class="memory"></div>
+                                        <p>存储性能</p>
+                                    </li>
+                                    <li>
+                                        <div class="development"></div>
+                                        <p>开发难度</p>
+                                    </li>
+                                    <li>
+                                        <div class="cost"></div>
+                                        <p>成本</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="section3 spacing">
+                    <div class="center">
+                        <div class="icon_center">
+                            <img src="image/index/ic_link.png"/>
+                        </div>
+                        <h2>连通率</h2>
+                        <p class="align_center">连通率是指在视频直播及录像点播中，视频打开并正常显示的概率</p>
+                        <div class="img_align_center section3_img" data-preloading=false data-loading=true data-imgUrl="image/index/img_link.jpg">
+                            <img/>
+                        </div>
+                        <p>传统视频传输服务多采用单条路径传输。在链路环境无法保证时，会出现视频无法打开，导致连通率一般无法突破90%。</p>
+                        <p>羚羊视频云通过采用VDN和P2P传输模式，可同时在多条路径传输视频流。通过智能调度选择最优路径，保证视频正常打开，确保视频连通率在<span>99.9%</span>以上。</p>
+                    </div>
+                </div>
+                <div class="section4">
+                    <div class="spacing">
+                        <div class="center">
+                            <div class="icon_center">
+                                <img src="image/index/ic_load.png"/>
+                            </div>
+                            <h2>加载时间</h2>
+                            <p class="align_center">加载时间就是我们通常所说的Loading时间</p>
+                        </div>
+                    </div>
+                    <div class="center imgbg">
+                        <div class="spacing">
+                            <div class="center section4_img" data-preloading=false data-loading=true  data-imgUrl="image/index/img_load_time.jpg">
+                                <img/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacing">
+                        <div class="center">
+                            <p>传统视频传输通常使用TCP协议。TCP协议需要三次握手建立连接，开销过大易导致视频的加载时间变长。</p>
+                            <p><span>羚羊视频云</span>采用自主研发的CLUST协议进行视频连接。 既减小通信连接的复杂性又能保证很强的数据容错性，降低加载时间做到视频秒开。</p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="section5">
+                    <div class="spacing">
+                        <div class="center">
+                            <div class="icon_center">
+                                <img src="image/index/ic_delay.png"/>
+                            </div>
+                            <h2>延时</h2>
+                            <p class="align_center">视频编解码和网络传输需要耗费一定的时间。这会造成收端的视频画面要比发端真实场景滞后，这就是我们通常所说的延时</p>
+                            <div class="delay_img_spacing section5_img1" data-preloading=false data-loading=true data-imgUrl="image/index/img_delay_left.jpg">
+                                <img/>
+                            </div>
+                            <p><span>传统视频传输：<br/></span>传统视频传输是基于RTMP和HLS协议。这两种传输方案成熟。RTMP的延时时间多为3-5秒。HLS的延时视不同切片数而定，一般为10秒以上（3个切片）。</p> 
+                            <div class="delay_img_spacing section5_img2" data-preloading=false data-loading=true data-imgUrl="image/index/img_delay_right.jpg">
+                                <img/>
+                            </div>
+                            <p class="font_align"><span class="font_title">羚羊视频云:<br/></span>羚羊视频云通过自主研发的羚羊码，并基于</p> 
+                            <p class="font_align">P2P技术，链路间合作及编码冗余降低</p>
+                            <p class="font_align">延迟720P@500Kbps:<span>延时在0.5秒左右</span></p>
+                            <p class="font_align">4K@4Mbps:<span>延时可控制在2秒以内</span></p>
+                            <p class="font_align">1080P@1Mbps:<span>延时在1秒左右</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section6">
+                    <div class="spacing">
+                        <div class="center">
+                            <div class="icon_center">
+                                <img src="image/index/ic_memory.png"/>
+                            </div>
+                            <h2>存储性能</h2>
+                            <p class="align_center">视频存储，指将视频流存储到硬盘中方便日后调取。衡量视频存储性能的两个维度：稳定性与读写速度</p>
+                        </div>
+                    </div>
+                    <div class="center memory_img_spacing section6_img" data-preloading=false data-loading=true data-imgUrl="image/index/img_memory.png">
+                        <img>
+                    </div>
+                    <div class="spacing">
+                        <div class="center">
+                            <p>羚羊视频云采用分布式云存储架构。单个数据可存储在多个服务器节点上，突破单台服务器的读写瓶颈。添加冗余的数据块增加稳定性。20%的存储节点出现故障都可以确保数据正常恢复。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section7">
+                    <div class="spacing">
+                        <div class="center">
+                            <div class="icon_center">
+                                <img src="image/index/ic_development.png"/>
+                            </div>
+                            <h2>开发难度</h2>
+                            <p class="align_center">开发难度是指客户产品与云平台对接的难易程度。也就是对接的成功率及需要的时间</p>
+                        </div>
+                    </div>
+                    <div class="center development_img_spacing section7_img" data-preloading=false data-loading=true data-imgUrl="image/index/img_development.png">
+                         <img>
+                    </div>
+                    <div class="spacing">
+                        <div class="center">
+                            <p>羚羊云提供高度封装的接口，只需要简单的几行代码即可实现与羚羊视频云的成功对接。我们还提供样例源代码供参考。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section8">
+                    <div class="spacing">
+                        <div class="center">
+                            <div class="icon_center">
+                                <img src="image/index/ic_cost.png"/>
+                            </div>
+                            <h2>成本</h2>
+                            <p class="align_center">成本是指为了实现视频应用效果所投入的资金</p>
+                        </div>
+                    </div>
+                    <div class="center cost_img_spacing section8_img" data-preloading=false data-loading=true data-imgUrl="image/index/img_cost.png">
+                        <img>
+                    </div>
+                    <div class="spacing">
+                        <div class="center">
+                            <p>传统视频无论是带宽还是存储，价格普遍偏高，并且还需要大量的人工运维。</p>
+                            <p>羚羊视频云通过独创的VDN模式，把带宽以及存储发挥到极致，且随着用户数的增加，成本下降趋势更加明显，最多可比其他云平台<span>降低50%</span>运营成本。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section9">
+                    <div class="applyServices swiper-container">
+                    <div class="apply_logo">
+                        <h1>我们为移动互联提供基础设施服务</h1>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="silde_page">
+                                <ul class="silde_page_items clearfix">
+                                    <li>
+                                        <div class="rate"></div>
+                                        <p>连通率高</p>
+                                    </li>
+                                    <li>
+                                        <div class="loading_time"></div>
+                                        <p>加载时间短</p>
+                                    </li>
+                                    <li>
+                                        <div class="delay"></div>
+                                        <p>延时低</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="silde_page">
+                                <ul class="silde_page_items">
+                                    <li>
+                                        <div class="memory"></div>
+                                        <p>存储性能稳定</p>
+                                    </li>
+                                    <li>
+                                        <div class="development"></div>
+                                        <p>开发难度低</p>
+                                    </li>
+                                    <li>
+                                        <div class="cost"></div>
+                                        <p>成本低</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <footer class="footer_container">
+                <div class="footer_list">
+                    <dl class="footer_dl clearfix">
+                        <dd><a href="http://weibo.com/u/5613135691?topnav=1&wvr=6&topsug=1&is_hot=1" class="weibo">新浪微博</a></dd>
+                        <dd><a class="weixin">官方微信</a></dd>
+                        <dd><a href="down.html" class="sdk">APP下载</a></dd>
+                    </dl>
+                </div>
+                <p>深圳羚羊极速科技有限公司 京ICP备15033186号-1</p>
+            </footer>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/home.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

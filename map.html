@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="red">
+<meta name="format-detection" content="telephone=no">
+<link href="css/home.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=4NI1IgIb0bB2bRtsbMOo7Xu5"></script>
+<script type="text/javascript" src="js/home.js"></script>
+</head>
+<body id="mapPage">
+    <div class="mapContainer">
+        <div class="back"></div>
+        <div id="map"></div>
+        <div class="showAdress">
+            <div class="showAdress_detail">
+                <h1>深圳羚羊极速科技有限公司</h1>
+                <p>深圳市南山区高新科技园后海大道2388号怡化金融科技大厦13层01单元</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            var height = window.screen.height;
+            $(".mapContainer").height(parseInt(height));
+            $("#map").height(parseInt(height)-80);
+            var map = new BMap.Map("map");
+            // map.addEventListener("click", function(e){    
+            //  console.log(e.point.lng + ", " + e.point.lat);    
+            // });
+            var point = new BMap.Point(113.942549,22.530257);
+            map.centerAndZoom(point, 19);
+            // var myDrag = new BMapLib.DragAndZoomTool(map, {    
+            // });
+            var point1 = new BMap.Point(113.942533,22.530290);
+            var myIcon = new BMap.Icon("image/about/location.png", new BMap.Size(40,52), {
+            });
+            var marker = new BMap.Marker(point1,{icon:myIcon});  // 创建标注
+            map.addOverlay(marker);              // 将标注添加到地图中
+            map.disableScrollWheelZoom(); 
+            var navigationControl = new BMap.NavigationControl({
+                anchor: BMAP_ANCHOR_TOP_RIGHT,
+                type: BMAP_NAVIGATION_CONTROL_LARGE,
+                enableGeolocation: true
+            });
+            map.addControl(navigationControl); 
+        })
+    </script>
+</body>
+</html>
